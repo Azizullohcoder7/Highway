@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from common.models import HomeVideo
+
+
+@admin.register(HomeVideo)
+class HomeVideoAdmin(admin.ModelAdmin):
+    list_display = ("name", )
+

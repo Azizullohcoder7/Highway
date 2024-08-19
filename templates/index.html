@@ -6,16 +6,15 @@
         <div class="video-overlay"></div>
         <div class="video-content">
             <div class="inner">
-              <h1>Welcome to <em>Highway</em></h1>
-              <p>FREE CSS TEMPLATE by templatemo</p>
-              <p>Homepage with full-width image gallery</p>
+            <h1>{{video.name}}</h1>
+            <p>{{video.description}}</p>
                 <div class="scroll-icon">
                     <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="/static/img/scroll-icon.png" alt=""></a>
                 </div>    
             </div>
         </div>
         <video autoplay loop muted>
-        	<source src="/static/highway-loop.mp4" type="video/mp4" />
+        <source src="{{video.video.url}}" type="video/mp4" />
         </video>
     </div>
 
